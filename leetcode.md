@@ -43,3 +43,4 @@
             }
             System.out.println(nearestValidPoint(x,y,points));
         }
+    }
