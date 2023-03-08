@@ -19,7 +19,7 @@
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution23 {
     public int[] printNumbers(int n) {
         int flag = (int)(Math.pow(10,n)) - 1;
         int[] ints = new int[flag];

@@ -41,7 +41,7 @@ import java.util.List;
 import java.util.Stack;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution_{
     public List<List<Integer>> permute(int[] nums) {
         int len = nums.length;
         List<List<Integer>> res = new ArrayList<>();

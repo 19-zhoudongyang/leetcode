@@ -42,7 +42,7 @@ import leetcode.editor.cn.ListNode;
  *     ListNode(int x) { val = x; }
  * }
  */
-class Solution {
+class Solution3 {
     public ListNode deleteNode(ListNode head, int val) {
         ListNode pre = head;
         ListNode cur = head.next;

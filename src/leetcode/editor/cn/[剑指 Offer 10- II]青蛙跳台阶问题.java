@@ -33,7 +33,7 @@ package leetcode.editor.cn;//一只青蛙一次可以跳上1级台阶，也可�
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution2 {
     public int numWays(int n) {
         if (n == 0){
             return 1;

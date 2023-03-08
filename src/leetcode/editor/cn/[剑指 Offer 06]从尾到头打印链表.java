@@ -29,9 +29,9 @@ import java.util.*;
  *     ListNode(int x) { val = x; }
  * }
  */
-class ListNode {
-    int val;
-    ListNode next;
+public class ListNode {
+    public int val;
+    public ListNode next;
     ListNode(int x) { val = x; }
 }
 class Solution {
