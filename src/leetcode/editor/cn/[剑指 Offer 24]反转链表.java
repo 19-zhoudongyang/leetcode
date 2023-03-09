@@ -29,7 +29,7 @@ package leetcode.editor.cn;//定义一个函数，输入一个链表的头节点
  *     ListNode(int x) { val = x; }
  * }
  */
-class Solution {
+class Solution1344 {
     public ListNode reverseList(ListNode head) {
         ListNode pre = null;
         ListNode cur = head;

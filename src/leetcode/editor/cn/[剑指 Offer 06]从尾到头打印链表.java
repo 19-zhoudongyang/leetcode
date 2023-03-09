@@ -29,10 +29,10 @@ import java.util.*;
  *     ListNode(int x) { val = x; }
  * }
  */
-public class ListNode {
+class ListNode {
     public int val;
     public ListNode next;
-    ListNode(int x) { val = x; }
+    public ListNode(int x) { val = x; }
 }
 class Solution {
     public static void main(String[] args) {

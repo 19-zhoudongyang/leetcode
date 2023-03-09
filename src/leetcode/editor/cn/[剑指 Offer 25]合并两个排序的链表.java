@@ -1,4 +1,4 @@
-//输入两个递增排序的链表，合并这两个链表并使新链表中的节点仍然是递增排序的。 
+package leetcode.editor.cn;//输入两个递增排序的链表，合并这两个链表并使新链表中的节点仍然是递增排序的。
 //
 // 示例1： 
 //
@@ -29,18 +29,33 @@ import java.util.List;
  *     ListNode(int x) { val = x; }
  * }
  */
-class Solution {
+class Solution13 {
+    public static void main(String[] args) {
+        ListNode listNode = new ListNode(1);
+        listNode.next = new ListNode(2);
+        listNode.next.next = new ListNode(4);
+        ListNode listNode2 = new ListNode(1);
+        listNode2.next = new ListNode(3);
+        listNode2.next.next = new ListNode(4);
+        new Solution13().mergeTwoLists(listNode,listNode2);
+    }
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        ListNode pre1 = l1;
-        ListNode pre2 = l2;
-//        ListNode newNode = new ListNode();
 
-        while(pre1.next != null){
-
+        ListNode newNode = new ListNode(0);
+        ListNode l3 = newNode;
+        while(l1 != null && l2 != null){
+            if ( l1.val <= l2.val){
+                l3.next = l1;
+                l1 = l1.next;
+            }else{
+                l3.next = l2;
+                l2 = l2.next;
+            }
+            l3 = l3.next;
         }
-        while(pre2.next != null){
-
-        }
+        l3.next = l1 == null? l2 : l1;
+        newNode = newNode.next;
+        return newNode;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
